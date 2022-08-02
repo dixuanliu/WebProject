@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 html{
-    width: 100%;
-    height: 100%;
     background-color: darkcyan
 }
 #app{
@@ -16,12 +14,31 @@ html{
 }
 .inputStyle{
     border-style: solid;
-    border-image: linear-gradient(to right, #5dd6b8, #57d1ef) ;
-    
+    border-image: linear-gradient(90deg, #5dd6b8,#57d1ef) 1;
 }
 input{
     border: none;
     background: none;
-    color: #ddd;
     outline: none;
+    color:#d0ffdc;
+}
+.showList{
+    list-style: none;
+    padding-left: 0%;
+    li{
+        border-bottom: 5px solid#57d1ef;
+        border-image: linear-gradient(90deg, #5dd6b8,#57d1ef) 1;
+    }
+}
+.intro{
+    textarea{
+        background: none;
+        border:7px solid #d0ffdc;
+        border-image:linear-gradient(90deg, #5dd6b8,#57d1ef) 1;
+        outline: none;
+        resize: none;
+    }
+}
+label{
+    display: block;
 }

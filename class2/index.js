@@ -2,6 +2,10 @@ const app = Vue.createApp({
     data(){
         return{
             username : "",
+            gender:"",
+            interest:[],
+            occupation:"",
+            intro:"",
         }
     },
     methods:{
