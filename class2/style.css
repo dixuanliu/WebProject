@@ -19,8 +19,8 @@ html {
 
 .inputStyle {
   border-style: solid;
-  -o-border-image: linear-gradient(to right, #5dd6b8, #57d1ef) 1;
-     border-image: linear-gradient(to right, #5dd6b8, #57d1ef) 1;
+  -o-border-image: linear-gradient(to right, #5dd6b8, #57d1ef);
+     border-image: linear-gradient(to right, #5dd6b8, #57d1ef);
 }
 
 input {
