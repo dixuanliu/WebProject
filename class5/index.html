@@ -10,11 +10,11 @@
 </head>
 <body>
     <div id="app">
-        <article v-html="text"></article>
-        <p>listLength:{{list.length}}</p>
-        <p v-once>listOriginLength:{{list.length}}</p>
-        <button @click = "list.length += 1">添加</button>
-        <input type="text" :[attr] = "value" @[event] = "handleChange"> 
+        <ul>
+            <li v-for="(value,name,index) in blogPost">{{index}},{{name}}-{{value}}</li>
+            <li v-for="todos in toDos" :key="todos.id">{{todos.content}}</li>
+            <p v-for="value in 5">{{value}}</p>
+        </ul>
     </div>
 <script src="./index.js"></script>
 </body>
