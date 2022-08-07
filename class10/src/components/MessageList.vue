@@ -8,6 +8,9 @@
 <script>
 export default {
     props: ["name", "time", "msg"],
+    mounted() {
+        console.log(this.name)
+    },
 }
 </script>
 <style scoped>
