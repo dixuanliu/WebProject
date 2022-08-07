@@ -10,7 +10,7 @@ export default {
     props: ["name", "time", "msg"],
 }
 </script>
-<style scoped="scoped">
+<style scoped>
 div {
     display: grid;
     grid-template-areas:
@@ -21,5 +21,13 @@ div {
     border-radius: 4px;
     padding: 1rem;
     width: 250px;
+}
+
+span {
+    justify-self: end;
+}
+
+div>p:last-child {
+    margin-top: 1rem;
 }
 </style>

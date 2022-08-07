@@ -1,32 +1,39 @@
 <script setup>
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import WordCount from './components/WordCount.vue';
 import MessageList from './components/MessageList.vue';
-import MessageList1 from './components/MessageList.vue';
 </script>
 
 <template>
-<MessageList1 name = "Bob" msg = "hello" time ="19:38"></MessageList1>
-<MessageList1 name = "Bob" msg = "hello" time ="19:38"></MessageList1>
+<MessageList name = "Bob" msg = "hello" time ="19:38"/>
+<MessageList name = "Tom" msg = "hello everyone" time ="19:48"/>
 </template>
 
 <style>
-*{
-  color: white;
-  padding: 0%;
-  margin: 0%;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, "PingFang SC", "Microsoft Yahei", sans-serif;
 }
 body {
-    font-family: 'Roboto Condensed', sans-serif;
-    background-color: rgb(20,20,70);
-  }
-#app{
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10%;
+  background-color: #0f141c;
+  opacity: 1;
+  background-image: radial-gradient(
+    #212943 0.6000000000000001px,
+    #0f141c 0.6000000000000001px
+  );
+  background-size: 12px 12px;
+  color: white;
 }
-
+#app {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  display: grid;
+  place-items: center;
+}
+h1 {
+  margin-bottom: 2em;
+}
 </style>
