@@ -1,17 +1,51 @@
-<script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import MessageList from './components/MessageList.vue';
-</script>
-
 <template>
-  <div>
-    <MessageList name="Bob" msg="hello" time="19:38" />
-    <MessageList name="Tom" msg="hello everyone" time="19:48" />
-    <MessageList name="Allay" msg="hi everyone" time="19:49" />
-  </div>
+  <main>
+    <div>
+      <DeletePost v-for="post in posts" :key="post.id" v-bind="post" @deletePost="handleDeletePost" />
+    </div>
+    <Card>
+      <template #title>
+        <div>
+          Card Name
+        </div>
+      </template>
+      <template #content>
+        <div>
+          <p>this is content</p>
+          <p>any HTML content</p>
+          <a href="http://someurl.com">any type</a>
+        </div>
+      </template>
 
+    </Card>
+  </main>
 </template>
+
+<script>
+import DeletePost from "./components/DeletePost.vue";
+import Card from "./components/Card.vue";
+
+export default {
+  components: {
+    DeletePost,
+    Card
+  },
+  data() {
+    return {
+      posts: [
+        { id: 1, title: "Post 1", link: "https://some.url.com" },
+        { id: 2, title: "Post 2", link: "https://some.url.com" },
+        { id: 3, title: "Post 3", link: "https://some.url.com" },
+      ],
+    };
+  },
+  methods: {
+    handleDeletePost(id) {
+      this.posts = this.posts.filter((p) => p.id !== id);
+    },
+  },
+};
+</script>
 
 <style>
 * {
@@ -38,7 +72,19 @@ body {
   place-items: center;
 }
 
-h1 {
-  margin-bottom: 2em;
+a {
+  color: hsl(250deg, 100%, 90%);
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: linear-gradient(90deg,
+      hsl(240deg, 50%, 50%),
+      hsl(280deg, 50%, 50%));
+  padding: 3px 4px;
+  margin-left: 12px;
+  border-radius: 4px;
+  color: white;
 }
 </style>

@@ -20,7 +20,7 @@
 }
 #info {
   font: 20px bold;
-  font-family: Courier;
+  font-family:  Helvetica;
   display: flex;
   width: 304px;
   margin: 0 auto;
@@ -55,5 +55,5 @@
     padding: 5px;
     border-radius: 5px;
     font: bold;
-    font-family: Courier;
+    font-family: Helvetica
 }
