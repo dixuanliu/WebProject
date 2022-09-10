@@ -5,29 +5,36 @@
 }
 #main {
   margin: 20px auto;
-  width: 360px;
-  height: 420px;
-  border: 10px solid #000;
+  width: 247px;
+  height: 370px;
+  border: 3px solid rgb(184, 184, 184);
   border-radius: 20px;
-  background-color: #b7d4a8;
+  background-color: #a5a5a5;
+}
+#wrapper{
+  margin: 20px auto;
+  border: #000000 solid 2px;
+  background-color: #c8c8c8;
+  width: 184px;
+  border-radius: 5px;
 }
 #screen {
-  margin: 20px auto;
   position: relative;
-  border: 2px solid #000;
-  width: 304px;
-  height: 304px;
+  height: 184px;
 }
 #info {
-  font: 20px bold;
-  font-family:  Helvetica;
+  font: 15px bold;
+  font-family: Helvetica;
   display: flex;
-  width: 304px;
+  width: 182px;
   margin: 0 auto;
+  padding: 0 5px;
+  border-top: 2px solid #424e59;
   justify-content: space-between;
+  clear: flow;
 }
 #food {
-    width: 10px;
+  width: 10px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -45,15 +52,26 @@
   height: 10px;
   background-color: #000;
   position: absolute;
-  border: #b7d4a8 solid 1px;
+  border: #ccd1d0 solid 1px;
+  border-radius: 5px;
 }
 #button{
-    background: none;
-    background-color: #b7d4a8;
-    outline: none;
-    border: 2px solid #000;
-    padding: 5px;
-    border-radius: 5px;
-    font: bold;
-    font-family: Helvetica
+  margin-top: 26px;
+  padding-left: 36px;
+}
+p{
+  margin-left: 26px;
+  width: 60px;
+  word-wrap: break-word;
+  font-family: helvetica;
+}
+#restart {
+  width: 30px;
+  height: 30px;
+  background: none;
+  background-color: #424e59;
+  outline: none;
+  border: 2px solid #000;
+  padding: 10px;
+  border-radius: 30px;
 }

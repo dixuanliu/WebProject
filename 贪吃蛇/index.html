@@ -11,23 +11,35 @@
 
 <body>
     <div id="main">
-        <div id="screen">
-            <div id="snake">
-                <div></div>
-            </div>
-            <div id="food">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+        <div id="outer">
+            <div id="wrapper">
+                <div id="screen">
+                    <div id="snake">
+                        <div></div>
+                    </div>
+                    <div id="food">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div id="info">
+                    <div>SCORE:<span id="score">0</span></div>
+                    <div>LEVEL:<span id="level">1</span></div>
+                </div>
             </div>
         </div>
-        <div id="info">
-            <div>SCORE:<span id="score">0</span></div>
-            <button id="button">RESTART</button>
-            <div>LEVEL:<span id="level">1</span></div>
+
+
+
+
+        <div id="button">
+            <button id="restart" />
         </div>
+        <p>press to restart</p>
     </div>
-    <script src = "index.js"></script>
+    <script src="index.js"></script>
 </body>
+
 </html>

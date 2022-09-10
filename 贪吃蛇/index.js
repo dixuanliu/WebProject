@@ -32,8 +32,8 @@ document.addEventListener("keydown", (event) => {
 });
 
 function ChangeFood() {
-  const FoodX = Math.floor(Math.random() * 30) * 10;
-  const FoodY = Math.floor(Math.random() * 30) * 10;
+  const FoodX = Math.floor(Math.random() * 17) * 10;
+  const FoodY = Math.floor(Math.random() * 17) * 10;
   food.style.top = FoodY + "px";
   food.style.left = FoodX + "px";
 }
@@ -72,7 +72,7 @@ setTimeout(function Move() {
     snake.insertAdjacentHTML("beforeend", "<div/>");
   }
 
-  if (x < 0 || x > 290 || y < 0 || y > 290) {
+  if (x < 0 || x > 170 || y < 0 || y > 170) {
     alert("GAME OVER!");
     return;
   }
