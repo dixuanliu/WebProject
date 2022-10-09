@@ -1,4 +1,7 @@
 <template>
+  <div class="hover">
+    
+  </div>
   <MessageList2></MessageList2>
 </template>
 
