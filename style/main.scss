@@ -11,7 +11,7 @@ body {
 	opacity: 1;
 	background-image: radial-gradient(
 		#212943 0.6000000000000001px,
-		#0f141c 0.6000000000000001px
+		#53709e 0.6000000000000001px
 	);
 	background-size: 12px 12px;
 	color: white;
@@ -21,15 +21,16 @@ body {
 	width: 100vw;
 	height: 100vh;
 	max-width: 100%;
-	display: grid;
-	place-items: center;
+	padding-left: 8%;
 }
 
 a {
 	color: #d5ccff;
 	text-decoration: none;
 }
-
+p{
+	display: block;
+}
 button {
 	border: none;
 	background: linear-gradient(90deg, #4040bf, #9540bf);
@@ -47,14 +48,6 @@ input {
 	outline: none;
 	background: #59267333;
 	color: white;
-}
-
-ul {
-	list-style: none;
-}
-
-li {
-	margin-top: 2rem;
 }
 
 select {
@@ -82,21 +75,11 @@ select {
 
 ul {
 	list-style: none;
-	display: grid;
-	gap: 24px;
 }
 
 li {
 	display: flex;
-	align-items: center;
+	flex-direction: column;
+	justify-content: left;
 	gap: 12px;
-
-	&:before {
-		content: "";
-		display: block;
-		width: 8px;
-		height: 8px;
-		background-color: hsl(280deg, 100%, 70%);
-		border-radius: 100%;
-	}
 }

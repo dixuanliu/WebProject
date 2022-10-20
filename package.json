@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "echarts": "^5.4.0"
-  },
-  "devDependencies": {
-    "@types/node": "^18.7.21"
-  }
-}
