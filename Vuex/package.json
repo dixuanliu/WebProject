@@ -1,5 +1,5 @@
 {
-  "name": "routes",
+  "name": "vuex",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,13 +9,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "sass": "^1.55.0",
+    "sass": "^1.56.0",
     "sass-loader": "^13.1.0",
-    "vue": "^3.2.37",
-    "vue-router": "^4.1.5"
+    "vue": "^3.2.41",
+    "vuex": "^4.1.0"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^3.1.0",
-    "vite": "^3.1.0"
+    "@vitejs/plugin-vue": "^3.2.0",
+    "vite": "^3.2.0"
   }
 }

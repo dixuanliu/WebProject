@@ -9,18 +9,25 @@
     
 </template>
 
-<script>
+<script setup>
+import { onBeforeMount, onBeforeUpdate, ref } from 'vue';
 import getData from '../getData.js'
-export default{
-    data(){
-        return{
-            data:[]
-        }
-    },
-    created(){
-        getData("https://jsonplaceholder.typicode.com/posts").then((data)=>{this.data = data})
-    }
-}
+let data = ref([])
+
+onBeforeMount(async ()=>{
+    data.value =  await getData("https://jsonplaceholder.typicode.com/posts")
+    console.log(data.value);
+})
+// export default{
+//     data(){
+//         return{
+//             data:[]
+//         }
+//     },
+//     created(){
+//         getData("https://jsonplaceholder.typicode.com/posts").then((data)=>{this.data = data})
+//     }
+// }
 </script>
 <style >
 </style>

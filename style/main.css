@@ -9,7 +9,7 @@
 body {
   background-color: #0f141c;
   opacity: 1;
-  background-image: #212943 ;
+  background-image: radial-gradient(#212943 0.6px, #879cbc 0.6px);
   background-size: 12px 12px;
   color: white;
 }
@@ -18,7 +18,7 @@ body {
   width: 100vw;
   height: 100vh;
   max-width: 100%;
-  padding-left: 8%;
+  max-height: 100%;
 }
 
 a {
@@ -47,6 +47,10 @@ input {
   outline: none;
   background: rgba(89, 38, 115, 0.2);
   color: white;
+}
+
+input::-webkit-input-placeholder{
+  line-height: normal;
 }
 
 select {
