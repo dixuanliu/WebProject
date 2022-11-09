@@ -1,0 +1,63 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, "PingFang SC", "Microsoft Yahei", sans-serif;
+}
+body {
+	background-color: #0f141c;
+	opacity: 1;
+	background-image: radial-gradient(
+		#212943 0.6000000000000001px,
+		#0f141c 0.6000000000000001px
+	);
+	background-size: 12px 12px;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 100px;
+}
+.wind {
+	width: 300px;
+	height: 300px;
+	background-image: linear-gradient(
+		90deg,
+		hsl(0deg, 60%, 50%),
+		hsl(140deg, 90%, 50%),
+		hsl(200deg, 90%, 50%)
+	);
+	clip-path: polygon(
+		0% 50%,
+		25% 25%,
+		50% 50%,
+		50% 0%,
+		75% 25%,
+		50% 50%,
+		100% 50%,
+		75% 75%,
+		50% 50%,
+		50% 100%,
+		25% 75%,
+		50% 50%
+	);
+	animation: rotate 5s infinite linear;
+}
+.stick {
+	position: relative;
+	top: -150px;
+	left: 145px;
+	width: 10px;
+	height: 300px;
+	background-color: #fff;
+	border-radius: 3px;
+	z-index: -1;
+}
+@keyframes rotate {
+	0% {
+		rotate: 0deg;
+	}
+	100% {
+		rotate: 360deg;
+	}
+}

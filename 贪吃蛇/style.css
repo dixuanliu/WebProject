@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#main {
+  margin: 20px auto;
+  width: 247px;
+  height: 370px;
+  border: 3px solid rgb(184, 184, 184);
+  border-radius: 20px;
+  background-color: #a5a5a5;
+}
+#wrapper{
+  margin: 20px auto;
+  border: #000000 solid 2px;
+  background-color: #c8c8c8;
+  width: 184px;
+  border-radius: 5px;
+}
+#screen {
+  position: relative;
+  height: 184px;
+}
+#info {
+  font: 15px bold;
+  font-family: Helvetica;
+  display: flex;
+  width: 182px;
+  margin: 0 auto;
+  padding: 0 5px;
+  border-top: 2px solid #424e59;
+  justify-content: space-between;
+  clear: flow;
+}
+#food {
+  width: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: absolute;
+}
+#food > div {
+  width: 5px;
+  height: 5px;
+  position: relative;
+  background-color: #000;
+  transform: rotate(45deg);
+}
+#snake > div {
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  position: absolute;
+  border: #ccd1d0 solid 1px;
+  border-radius: 5px;
+}
+#button{
+  margin-top: 26px;
+  padding-left: 36px;
+}
+p{
+  margin-left: 26px;
+  width: 60px;
+  word-wrap: break-word;
+  font-family: helvetica;
+}
+#restart {
+  width: 30px;
+  height: 30px;
+  background: none;
+  background-color: #424e59;
+  outline: none;
+  border: 2px solid #000;
+  padding: 10px;
+  border-radius: 30px;
+}

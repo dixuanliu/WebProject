@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 23px;
+  font-family: Arial, "PingFang SC", "Microsoft Yahei", sans-serif;
+}
+
+body {
+  background-color: #0f141c;
+  opacity: 1;
+  background-image: radial-gradient(#212943 0.6px, #879cbc 0.6px);
+  background-size: 12px 12px;
+  color: white;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+a {
+  color: #d5ccff;
+  text-decoration: none;
+}
+
+p {
+  display: block;
+}
+
+button {
+  border: none;
+  background: linear-gradient(90deg, #4040bf, #9540bf);
+  padding: 1em 2em;
+  margin-top: 24px;
+  margin-right: 12px;
+  border-radius: 4px;
+  color: white;
+}
+
+input {
+  padding: 8px 14px;
+  border: 1px solid #9540bf;
+  border-radius: 4px;
+  outline: none;
+  background: rgba(89, 38, 115, 0.2);
+  color: white;
+}
+
+input::-webkit-input-placeholder{
+  line-height: normal;
+}
+
+select {
+  width: 100px;
+  padding: 0.2rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  background-size: 1.2rem 1.2rem;
+  border: 1px solid #9540bf;
+  border-radius: 4px;
+  background-position: right 5px center;
+}
+
+#message {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 12px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 12px;
+}/*# sourceMappingURL=main.css.map */
