@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./lib/vue.global.js"></script>
+</head>
+<body>
+    <div id="app">
+        <div>
+            <label for="username">用户名</label>
+            <div class="inputStyle"><input type="text" name="username" @input = "getUsername"></div>
+            <label for="gender">性别</label>
+            <div class="gender-radio">
+                <input type="radio" name="gender" v-model = "gender" value="male"><span>男</span>
+                <input type="radio" name="gender" v-model = "gender" value="female"><span>女</span>
+            </div>
+            <label for="interest">兴趣</label>
+            <div class="checkbox-group">
+                <input type="checkbox" name="interest" value="frontend" v-model="interest"><span>前端</span>
+                <input type="checkbox" name="interest" value="backend" v-model="interest"><span>后端</span>
+                <input type="checkbox" name="interest" value="fullstack" v-model="interest"><span>全栈</span>
+            </div>
+            <label for="occupation">职业</label>
+            <select name="occupation" v-model="occupation" class="selectOccupation">
+                <option value="frontend">前端工程师</option>
+                <option value="backend">后端工程师</option>
+                <option value="fullstack">全栈工程师</option>
+            </select>
+            <div class="intro">
+                <label for="intro">自我介绍</label>
+                <textarea name="intro" v-model="intro"></textarea>  
+            </div>
+            <ul class="showList">
+            <li>用户名：{{username}}</li>
+            <li>性别:{{gender}}</li>
+            <li>兴趣：{{interest}}</li>
+            <li>职业：{{occupation}}</li>
+            <li>自我介绍：{{intro}}</li>
+            </ul>
+        </div>   
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
